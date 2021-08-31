@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>netnomics Clickbot Challange</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header class="centering">
+      <div>
+        <h1>Clickbot:</h1>
+        <h2>netto ⬄ brutto calculator</h2>
+        <h3>by Vukan</h3>
+      </div>
+    </header>
+
+    <main class="centering">
+      <div class="container">
+        <div class="li-container">
+          <div class="li-container__title">
+            <!-- Legende -->
+            <div>iD</div>
+            <div>Lager</div>
+            <div>Kunde</div>
+            <div>Steuer</div>
+            <div>Netto</div>
+            <div>Brutto</div>
+            <div>Markierung</div>
+          </div>
+          <div class="li-container__wrapper">
+            <!-- List items -->
+            <ol>
+              <li>
+                <div class="item">
+                  <select name="Lager" autofocus>
+                    <option value="de">DE</option>
+                    <option value="ch">CH</option>
+                  </select>
+                </div>
+                <div class="item">
+                  <input
+                    list="countries"
+                    class="cntryLst"
+                    id="countriesList"
+                    maxlength="2"
+                    placeholder="_ _"
+                    title="alpha2code, 2chars only"
+                  />
+                  <datalist id="countries"> </datalist>
+                </div>
+                <div class="item">
+                  <div class="steuerField">%</div>
+                </div>
+                <div class="item">
+                  <input
+                    type="number"
+                    placeholder="netto (€)"
+                    class="inputField nettoField"
+                  />
+                </div>
+                <div class="item">
+                  <input
+                    type="number"
+                    placeholder="brutto (€)"
+                    class="inputField bruttoField"
+                  />
+                </div>
+                <div class="item">
+                  <div class="markierungsField"></div>
+                  <div class="hidden">❎</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
