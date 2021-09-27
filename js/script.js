@@ -12,11 +12,11 @@ const datalistSet = document.getElementById('countries');
 const allCountriesCodes = [];
 const euroCountries = [];
 async function getAllCountriesAndPopulate() {
-  fetch('https://restcountries.eu/rest/v2/regionalbloc/eu')
+  fetch('https://restcountries.com/v2/regionalbloc/eu')
     .then((res) => res.json())
     .then((data) =>
       data.forEach((country) => {
-        euroCountries.push(country.alpha2Code);
+        euroCountries.push(country.cca2);
       })
     )
     .finally(() => {
@@ -29,12 +29,11 @@ async function getAllCountriesAndPopulate() {
   // incl. USA
   euroCountries.push('US');
 
-  fetch('https://restcountries.eu/rest/v2/all')
+  fetch('https://restcountries.com/v3/all')
     .then((resp) => resp.json())
     .then((data) => {
-      console.log(data.length);
       data.forEach((country) => {
-        allCountriesCodes.push(country.alpha2Code);
+        allCountriesCodes.push(country.cca2);
       });
 
       const htmlOptionTagsArray = allCountriesCodes.sort().map((countryCode) => {
