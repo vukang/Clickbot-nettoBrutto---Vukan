@@ -14,11 +14,7 @@ const euroCountries = [];
 async function getAllCountriesAndPopulate() {
   fetch('https://restcountries.com/v2/regionalbloc/eu')
     .then((res) => res.json())
-    .then((data) =>
-      data.forEach((country) => {
-        euroCountries.push(country.cca2);
-      })
-    )
+    .then((data) => data.forEach((country) => euroCountries.push(country.alpha2Code)))
     .finally(() => {
       // show countries loaded
       const infoMsg = `<p class="centering">Fetched resources for ${
