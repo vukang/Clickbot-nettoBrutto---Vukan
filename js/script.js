@@ -21,7 +21,9 @@ async function getAllCountriesAndPopulate() {
     )
     .finally(() => {
       // show countries loaded
-      const infoMsg = `<p class="centering">Fetched resources for ${euroCountries.length} EU countries (incl. US)</p>`;
+      const infoMsg = `<p class="centering">Fetched resources for ${
+        euroCountries.length - 1
+      } EU countries</p>`;
       headerEl.insertAdjacentHTML('afterend', infoMsg);
     });
   // incl. USA
