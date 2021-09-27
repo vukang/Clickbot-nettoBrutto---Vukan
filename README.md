@@ -16,4 +16,7 @@ Der Click Dummy sollte in der Lage sein auf Grundlage der Kombination aus Lager 
 
 Bitte dokumentier deine Herangehensweise und gib an, wie lange du für die Aufgabe gebraucht hast, das Limit sind 5 Stunden.
 
+<img width="659" alt="Screenshot 2021-09-27 at 18 50 43" src="https://user-images.githubusercontent.com/75476802/134952017-7be534bf-ab39-41b1-bcc5-97e7851e03d1.png">
+
+
 [Testaufgabe Developer Core.pdf](https://github.com/vukang/netnomics-Clickbot-nettoBrutto-Calculator/files/7238038/Testaufgabe.Developer.Core.pdf)
