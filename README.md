@@ -15,3 +15,5 @@ Die Angaben dazu findest du auf dem Import und dem Firmendatensatz.
 Der Click Dummy sollte in der Lage sein auf Grundlage der Kombination aus Lager und Kunde und Brutto oder Netto den jeweiligen anderen Betrag und den Steuersatz auszugeben.
 
 Bitte dokumentier deine Herangehensweise und gib an, wie lange du für die Aufgabe gebraucht hast, das Limit sind 5 Stunden.
+
+[Testaufgabe Developer Core.pdf](https://github.com/vukang/netnomics-Clickbot-nettoBrutto-Calculator/files/7238038/Testaufgabe.Developer.Core.pdf)
